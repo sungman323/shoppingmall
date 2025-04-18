@@ -1,0 +1,15 @@
+create table shop_temp (
+ `no` int(6) NOT NULL auto_increment primary key,
+ `name` varchar(20) not null,
+ `parent` varchar(20) not null,
+ `count` varchar(10) not null,
+ `price` double not null,
+ `money` double not null,
+ `img` varchar(255) not null,
+ `comment` varchar(500) not null,
+ `session_id` varchar(255) not null,
+ `datetime` datetime DEFAULT current_timestamp() 
+)
+
+* 
+* session_id는 사용자 id를 받아와서 비교해야... 세션 id로 하지 말고.......

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+:root{
+  --m_color:#FE980F;
+}
+
+.login_form{
+  width:390px;
+  margin:0 auto;
+}
+#id_check{
+  display:inline-block !important;
+  margin:0px;
+  width:15px;height:15px;
+}
+
+.login_form form #id, #password, .btn{
+  background: #F0F0E9;
+  border: medium none;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  margin-bottom: 10px;
+  outline: medium none;
+  padding-left: 10px;
+  width: 100%;
+}
+label[for='id'], label[for='password']{
+  display:none;
+}
+.id_save{text-align:left;}
+.id_save label{
+  font-weight:normal;
+  padding-left:3px;
+}
+/* 로그인 버튼 서식 */
+.login_form .btn{
+  background: var(--m_color);
+  color:#fff;
+}
+/* 카카오 로그인 버튼 */
+#kakao_login{
+  background:#fada0a;
+  color:#333;
+  padding-top:10px;
+}
+
+/* 회원가입 폼 */
+.join_form{
+  width:400px;
+  margin:0 auto;
+}
+
+.join_form .btn{
+  background: var(--m_color);
+  color:#fff;
+}
+.join_form label{
+  display:block;
+  text-align:left;
+  line-height: 30px;
+}
+.join_form input{
+  width:100%;
+  height:38px;
+  background: #F0F0E9;;
+  border:none;
+  margin-bottom:4px;
+}
+.btn-default{margin-top:10px;}
+
+/* 0409 추가할 내용 */
+.id_check{
+  padding-top: 6px;
+  text-align:left;
+}
+
+#phone{margin-bottom:10px;}
+
+.agree_box > p{display:flex;}
+.agree_box textarea{
+  width:100%;
+  border:1px solid #ccc;
+  resize:none;
+}
+.agree_box input[type=checkbox]{
+  width:16px;
+  transform:translateY(-7px);
+  margin-right:10px;
+}
+span.text-right{
+  display:block;
+  color:#f00;
+}

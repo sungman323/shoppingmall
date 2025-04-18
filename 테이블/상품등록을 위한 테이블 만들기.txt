@@ -1,0 +1,11 @@
+CREATE TABLE `shop_data` (
+  `no` int(6) NOT NULL auto_increment primary key,
+  `cate` varchar(100) DEFAULT NULL,
+  `img` varchar(255) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `parent` varchar(20) NOT NULL,
+  `price` double NOT NULL,
+  `comment` varchar(500) NOT NULL,
+  `memo` varchar(255) NOT NULL,
+  `datetime` datetime DEFAULT current_timestamp()
+);
